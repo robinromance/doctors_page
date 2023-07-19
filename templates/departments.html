@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Departments {% endblock %}</title>
+</head>
+<body>
+    
+    {% block content %}
+    <h1 class="text-center">Our Departments</h1>
+    <hr>
+    {% for d in dept %}
+    <div class="mx-auto w-50 bg-info text-center my-5 text-white p-2 border-warrnig rounded">
+        <h2>{{ d.dep_name }}</h2>
+        <p>{{ d.dep_description }}</p>
+    </div>
+    {% endfor %}
+    <hr class="mb-5">
+    {% endblock %}
+</body>
+</html>
