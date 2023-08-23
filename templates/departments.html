@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block title %} Departments {% endblock %}
-<body>
     {% block content %}
-    <h1 class="text-center pt-4">Our Departments</h1>
+<body class="bg-image" style="background-image: url(https://img.freepik.com/free-photo/stethoscope-copy-space_23-2147652347.jpg); background-repeat: no-repeat; width: 100%; height: 100%; background-position: center; background-size: cover; background-attachment: fixed;">
+    <h1 class="text-center text-dark pt-4">Our Departments</h1>
+    <hr>
     {% for d in dept %}
-    <div class="mx-auto w-50 bg-info text-center my-5 text-white p-2 border-warrnig rounded">
+    <div class="mx-auto w-50 text-center my-5 text-white p-2 border-warrnig rounded">
         <h2>{{ d.dep_name }}</h2>
         <p>{{ d.dep_description }}</p>
     </div>
     {% endfor %}
     <hr class="mb-5">
-    {% endblock %}
 </body>
-</html>
+    {% endblock %}

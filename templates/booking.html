@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 {% block title %} Appointment {% endblock %}
-<body>
+
     {% block content %} 
+<body class="bg-image" style="background-image: url(https://t4.ftcdn.net/jpg/02/45/51/51/360_F_245515156_h2nHzDquKJxygpkOkG4UsMV5So5uh3LF.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
     <h1 class="text-center pt-4">Make an Appointment</h1>
-    <div class="container w-50 my-5 text-center bg-info rounded">
+    <div class="container w-50 my-5 text-center rounded">
         <form method="POST" class="p-4">
             {% csrf_token %}
             {{form|crispy}}
             <button type="submit" class="btn btn-primary ">Submit</button>
         </form>
     </div>
-    {%endblock%}
 </body>
-</html>
+    {%endblock%}
