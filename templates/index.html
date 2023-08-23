@@ -1,16 +1,9 @@
 {% extends "base.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% load static %}
     <title>{% block title %} Home {% endblock %}</title>
 </head>
 <body>
     {% block content %}
-
-    {% load static %}
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -20,7 +13,6 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <img src="{% static 'images/car1.jpg' %}" class="d-block w-100" alt="...">
-            <
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img src="{% static 'images/car2.jpg' %}" class="d-block w-100" alt="...">
@@ -28,7 +20,6 @@
           </div>
           <div class="carousel-item">
             <img src="{% static '/images/car3.jpg' %}" class="d-block w-100" alt="...">
-            
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -40,7 +31,60 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      
+      <div class="description text-center m-5">
+        <h3 class="fs-2 p-4">Centre for Excellence</h3>
+        <p class="fs-5">The leading tertiary care hospital in Asia. City Hospitals is the best in its field owing to its remarkable panel of eminent doctors. They include some of the most highly experienced, skilled and distinguished medical practitioners in the country. Combining the best specialists and equipment to provide you nothing short of the best in healthcare</p>
+      </div>
+      <div class="icon-container bg-info m-5 d-flex align-items-center justify-content-evenly flex-wrap rounded shadow p-3 mb-5 bg-body-tertiary">
+        <div class="icons text-center p-3 m-3">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-neuro-surgery.svg" alt="">
+          <h3>Neuro Surgery</h3>
+        </div>
+        <div class="icons p-3 m-3 text-center" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-neuro.svg" alt="">
+          <h3>Neurolagy</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-cardio.svg" alt="">
+          <h3>Cardiology</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width: 15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-vascular.svg" alt="">
+          <h3>Cardio Thoracic & Vascular</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-nephro.svg" alt="">
+          <h3>Nephrology</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-gastro.svg" alt="">
+          <h3>Gastroenterology & Hepatology</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-paediatric.svg" alt="">
+          <h3>Paediatrics</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-pulmonalgy.svg" alt="">
+          <h3>Pulmonology</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-critical-care.svg" alt="">
+          <h3>Critical Care</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-gynecology.svg" alt="">
+          <h3>Gynaecology</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-ortho.svg" alt="">
+          <h3>Orthopaedics</h3>
+        </div>
+        <div class="icons text-center p-3 m-3" style="width:15rem;">
+          <img src="https://www.ananthapurihospitals.com/assets/img/dept-icon/icon-urology.svg" alt="">
+          <h3>Urology</h3>
+        </div>
+      </div>
     {% endblock %}
 </body>
 </html>

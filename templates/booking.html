@@ -1,17 +1,9 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} Appointment {% endblock %}</title>
-</head>
+{% block title %} Appointment {% endblock %}
 <body>
     {% block content %} 
-    <h1 class="text-center">Make an Appointment</h1>
-    <hr>
+    <h1 class="text-center pt-4">Make an Appointment</h1>
     <div class="container w-50 my-5 text-center bg-info rounded">
         <form method="POST" class="p-4">
             {% csrf_token %}
